@@ -27,7 +27,8 @@ Download it here:
 https://www.kaggle.com/datasets/kennethtm/stream-macroinvertebrates
 
 After downloading, extract it so the folder structure looks like this:
-macro_project_final/
+```
+macro_project/
 └── data/
 └── raw/
 ├── Asellus sp/
@@ -47,6 +48,7 @@ macro_project_final/
 ├── Sialis sp/
 ├── Simuliidae sp/
 └── Sphaerium sp/
+```
 
 The dataset is not included in this repository due to file size.
 
@@ -139,28 +141,28 @@ The `outputs/eda/` folder is created automatically if it does not exist.
 ---
 
 ## Folder Structure
-macro_project_final/
+```
+macro_project/
 ├── .vscode/
-│   └── launch.json              ← VS Code run configuration
+│   └── launch.json            # VS Code run configuration
 ├── data/
-│   └── raw/                     ← Kaggle dataset goes here (not included)
+│   └── raw/                   # Kaggle dataset (not included)
 ├── outputs/
-│   └── eda/                     ← Generated charts saved here (auto-created)
+│   └── eda/                   # Generated charts (auto-created)
 ├── src/
-│   ├── config.py                ← Central paths and settings
-│   ├── main.py                  ← Terminal test script
-│   ├── App_SecondVer.py         ← Main Tkinter GUI
-│   ├── species_selector.py      ← Startup species selection dialog
 │   ├── models/
-│   │   └── records.py           ← ImageRecord dataclass
-│   └── services/
-│       ├── dataset_indexer.py   ← Scans dataset, builds DataFrame
-│       └── eda_service.py       ← Generates all EDA charts
-├── MANUAL_TESTING.md            ← Testing evidence
-├── README.md
-└── requirements.txt
-
----
+│   │   └── records.py         # ImageRecord dataclass
+│   ├── services/
+│   │   ├── dataset_indexer.py # Scans dataset, builds DataFrame
+│   │   └── eda_service.py     # Generates all EDA charts
+│   ├── App_SecondVer.py       # Main Tkinter GUI
+│   ├── config.py              # Central paths and settings
+│   ├── main.py                # Terminal test script
+│   └── species_selector.py    # Startup species selection dialog
+├── MANUAL_TESTING.md          # Testing evidence
+├── README.md                  # Project documentation
+└── requirements.txt           # Dependency list
+```
 
 ## Testing
 
