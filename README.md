@@ -102,7 +102,7 @@ On startup, a **Species Selection** window will appear before the main app loads
 - All 17 species are listed with checkboxes, all selected by default
 - Use **Select All** or **Deselect All** for quick selection
 - A minimum of **3 species** must be selected before continuing
-- Only the selected species are loaded and indexed — this keeps startup fast when you only need a subset of the data
+- Only the selected species are loaded and indexed, this keeps startup fast when you only need a subset of the data
 
 ---
 
